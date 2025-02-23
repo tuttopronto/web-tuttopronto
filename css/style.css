@@ -1,0 +1,480 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-header {
+    background-color: #F6F4ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 20px;
+    height: auto;
+}
+.logo img{
+    width:110px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.navbar {
+    background-color: #F6F4ED;
+}
+
+.navbar .navBar a:hover {
+    color: #2c2c2c;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    margin: 0 50px;
+    font-size: 2.4vh;
+}
+
+.navbar-nav {
+        display: flex;
+        justify-content: flex-end; /* Alinea los enlaces a la derecha */
+}
+
+
+.navbar-toggler {
+    padding: 10px; /* Aumenta el área del botón */
+}
+
+
+body{
+    font-family: "Playfair Display", serif;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/foto_principal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-2{
+        display: flex;
+        flex-direction: column; /* Acomoda los elementos uno debajo del otro */
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+        padding-top: 10px;
+        text-align: center;
+        background-color: #2c2c2c;
+        padding-bottom: 10px;
+}
+
+.section-2 h1{
+    font-size: 6vh;
+    text-transform: uppercase;
+    color: #F6F4ED;
+}
+
+.section-2 h2{
+    font-size: 3vh;
+    color: #F6F4ED;
+}
+
+
+
+
+
+.principal {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+@keyframes zoomBackground {
+    0% { background-size: 100%; }
+    50% { background-size: 110%; }
+    100% { background-size: 100%; }
+}
+
+.principal {
+    background: url('../assets/foto_principal.jpg') center/cover no-repeat;
+    height: 100vh;
+    animation: zoomBackground 10s infinite alternate ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        animation: none;  /* Desactiva la animación */
+    }
+}
+
+
+.cta{
+    text-align: center;
+    background-color: #2c2c2c;
+    color: #F6F4ED;
+    padding: 20px;
+}
+
+.cta p{
+    font-size: 4vh;
+}
+
+
+/* Estilos del botón */
+.cta .btn-primary {
+    border-color: #F6F4ED !important; /* Color del borde */
+    color: #2c2c2c !important; /* Color del texto */
+    background-color: #F6F4ED !important; 
+    outline: none !important;/* Eliminar el borde predeterminado */
+    margin: 10px;
+}
+
+
+body{
+    background-color: #2c2c2c;
+}
+
+.section-nosotros{
+    color: #F6F4ED;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-nosotros h1{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.section-nosotros p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.section-nosotros h2{
+    text-align: justify;
+    margin: 20px;
+    font-size: 4vh;
+}
+
+
+.section-nosotros .cta_nosotros .btn-primary{
+
+    border-color: #F6F4ED !important; /* Color del borde */
+    color: #2c2c2c !important; /* Color del texto */
+    background-color: #F6F4ED !important; 
+    outline: none !important;/* Eliminar el borde predeterminado */
+    margin-left: 20px;
+
+}
+
+.section-nosotros .cta_nosotros p{
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-nosotros .cta_nosotros{
+    text-align: center;
+}
+
+
+.section-nosotros ul{
+    list-style: none;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;  /* Alinea el icono y el texto verticalmente */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.custom-list .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;  /* Espacio reservado para el icono */
+    height: 24px;
+    margin-right: 10px;
+}
+
+.custom-list svg {
+    width: 20px;
+    height: 20px;
+    fill: #F6F4ED;
+}
+
+.custom-list .text {
+    flex: 1;  /* Permite que el texto use el espacio restante */
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;  /* Organiza los elementos del footer en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center;     /* Centra los elementos horizontalmente */
+    text-align: center;      /* Centra el texto */
+    padding: 20px;           /* Añade un poco de espacio alrededor */
+    background-color: #F6F4ED;  /* Ajusta el color de fondo si lo necesitas */
+    color: #2c2c2c;         /* Color del texto */
+}
+
+.redes-sociales {
+    display: flex;            /* Alinea los iconos de redes sociales en fila */
+    justify-content: center;  /* Centra los iconos horizontalmente */
+    gap: 15px;                /* Espaciado entre los iconos */
+    margin-bottom: 15px;      /* Espacio debajo de los iconos */
+}
+
+footer a {
+    color: #2c2c2c;              /* Establece el color blanco para los iconos */
+    text-decoration: none;    /* Elimina subrayados */
+}
+
+footer p {
+    margin: 5px 0;            /* Espaciado entre los párrafos */
+}
+
+
+
+
+.section-servicios{
+    margin: 20px;
+}
+.section-servicios h2{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #F6F4ED;
+}
+
+.section-servicios p{
+    color: #F6F4ED;
+    text-align: justify;
+}
+
+.texto-servicios p{
+    font-size: 3vh;
+}
+
+.card .card-body p{
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.card-title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.card .btn-primary{
+    align-items: center;
+    background-color: #2c2c2c;
+    border: none;
+}
+
+.card-body {
+    text-align: center;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin distorsión */
+}
+
+
+.container-cards{
+
+    margin-top: 50px;
+
+}
+
+/* Personalizar el estado normal del botón */
+.section-servicios .btn-primary {
+    background-color: #2c2c2c !important;  /* Color de fondo */
+    border-color: #2c2c2c !important;      /* Color del borde */
+    color: #F6F4ED !important;               /* Color del texto */
+}
+
+/* Eliminar borde y sombra cuando el botón está presionado o enfocado */
+.section-servicios .btn-primary:active,
+.btn-primary:focus {
+    background-color: #2c2c2c !important;  /* Mismo color de fondo */
+    border-color: #2c2c2c !important;      /* Mismo color del borde */
+    color: #F6F4ED !important;               /* Mantener el color blanco del texto */
+    box-shadow: none !important;           /* Elimina la sombra del botón */
+    outline: none !important;              /* Elimina el contorno de enfoque */
+}
+
+.card{
+    margin: 20px;
+}
+
+
+/* Asegura que todas las cards tengan la misma altura */
+.card {
+    display: flex;
+    flex-direction: column; /* Permite que el contenido dentro de la card se distribuya verticalmente */
+    height: 100%; /* Hace que todas las cards tengan la misma altura */
+}
+
+/* Asegura que el contenido del cuerpo de la card se expanda para llenar el espacio disponible */
+.card-body {
+    flex-grow: 1; /* Hace que el contenido de la card se expanda para ocupar todo el espacio disponible */
+}
+
+/* Ajusta la imagen para que no se distorsione */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Efecto bounce en hover */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.card {
+    animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.section-faq h1{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #F6F4ED;
+}
+
+.section-faq p{
+    text-align: justify;
+    margin: 20px;
+    color: #F6F4ED;
+    font-size: 3vh;
+}
+
+.accordion-flush{
+    margin: 20px;
+}
+
+
+/* Cambia el color de fondo de las tarjetas */
+.accordion-item {
+    background-color: #F6F4ED; /* Color de fondo para las tarjetas */
+}
+
+.accordion-button {
+    background-color: #F6F4ED; /* Color de fondo por defecto */
+    color: #2c2c2c; /* Color del texto */
+    font-weight: bold;
+}
+
+/* Cambia el color de fondo cuando el item está expandido */
+.accordion-button:not(.collapsed) {
+    background-color: #F6F4ED; /* Color al expandir */
+    color: #2c2c2c; /* Color del texto al expandir */
+}
+
+
+.accordion-button:focus {
+    box-shadow: none; /* Elimina el efecto de sombra que se muestra al hacer foco */
+    border: none; /* Elimina el borde que aparece cuando se hace clic */
+}
+
+.accordion {
+    border-radius: 10px; /* Cambia este valor según el radio del borde */
+    overflow: hidden; /* Asegura que el contenido dentro de los elementos se ajuste bien */
+}
+
+
+.section-contacto{
+    margin: 20px;
+    color: #F6F4ED;
+    text-align: justify;
+}
+
+.section-contacto h1{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #F6F4ED;
+}
+
+/* Asegura un margen inferior consistente entre todos los campos */
+.mb-3 {
+    margin-bottom: 20px; /* Ajusta el valor según necesites */
+}
+
+/* Si deseas más espacio específicamente en el select, puedes personalizarlo también */
+.mb-3 select {
+    margin-top: 5px; /* Si es necesario, ajusta el margen superior del select */
+}
+
+
+/* Eliminar borde azul y enfoque del campo en todos los navegadores */
+input:focus, select:focus, textarea:focus {
+    outline: none !important; /* Elimina el contorno */
+    box-shadow: none !important; /* Elimina la sombra */
+    border-color: #ccc !important; /* Establece un borde más neutro */
+}
+
+
+.section-contacto .btn-primary {
+    background-color: #F6F4ED;
+    color: #2c2c2c;
+
+}
+
+.section-contacto .btn-primary:active {
+    background-color: #F6F4ED ;
+}
+
+
+
+/* Eliminar el borde y sombra al hacer clic */
+.btn-primary:focus, .btn-primary:active {
+    outline: none !important; /* Elimina el borde azul cuando el botón está en foco */
+    box-shadow: none !important; /* Elimina la sombra */
+    border: none !important; /* Elimina el borde */
+}
+
+/* Eliminar el borde del botón cuando no está en foco */
+.btn-primary {
+    border: none !important;
+}
+
+
+
+
