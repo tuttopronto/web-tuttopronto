@@ -1,0 +1,720 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-header {
+    background-color: #F6F4ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 20px;
+    height: auto;
+}
+.logo img{
+    width:110px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.navbar {
+    background-color: #F6F4ED;
+}
+
+.navbar .navBar a:hover {
+    color: #2c2c2c;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    margin: 0 50px;
+    font-size: 2.4vh;
+}
+
+.navbar-nav {
+        display: flex;
+        justify-content: flex-end; /* Alinea los enlaces a la derecha */
+}
+
+
+.navbar-toggler {
+    padding: 10px; /* Aumenta el área del botón */
+}
+
+
+body{
+    font-family: "Playfair Display", serif;
+}
+
+
+
+
+
+
+.section-2{
+        display: flex;
+        flex-direction: column; /* Acomoda los elementos uno debajo del otro */
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+        padding-top: 10px;
+        text-align: center;
+        background-color: #2c2c2c;
+        padding-bottom: 10px;
+}
+
+.section-2 h1{
+    font-size: 6vh;
+    text-transform: uppercase;
+    color: #F6F4ED;
+}
+
+.section-2 h2{
+    font-size: 3vh;
+    color: #F6F4ED;
+    
+}
+
+.principal {
+    background-image: url('../assets/foto_principal.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    height: 100vh; /* Asegura que la altura sea la del viewport */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina el padding */
+    animation: zoomInOut 10s infinite; /* Nombre correcto de la animación */
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.02); /* Aumento al 130% para un zoom más pronunciado */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+    }
+}
+
+
+
+
+
+
+
+.cta{
+    text-align: center;
+    background-color: #2c2c2c;
+    color: #F6F4ED;
+    padding: 20px;
+}
+
+.cta p{
+    font-size: 4vh;
+}
+
+
+/* Estilos del botón */
+.cta .btn-primary {
+    border-color: #F6F4ED !important; /* Color del borde */
+    color: #2c2c2c !important; /* Color del texto */
+    background-color: #F6F4ED !important; 
+    outline: none !important;/* Eliminar el borde predeterminado */
+    margin: 10px;
+}
+
+.cta .btn-primary:hover {
+    background-color: #E0DED6 !important; /* Color del fondo al pasar el mouse */
+    color: #2c2c2c !important; /* Color del texto al pasar el mouse */
+    border-color: #F6F4ED !important; /* Mantener el color del borde */
+  }
+
+
+body{
+    background-color: #2c2c2c;
+}
+
+.section-nosotros{
+    color: #F6F4ED;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-nosotros h1{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.section-nosotros p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.section-nosotros h2{
+    text-align: justify;
+    margin: 20px;
+    font-size: 4vh;
+}
+
+
+
+.section-nosotros .cta_nosotros .btn-primary{
+
+    border-color: #F6F4ED !important; /* Color del borde */
+    color: #2c2c2c !important; /* Color del texto */
+    background-color: #F6F4ED !important; 
+    outline: none !important;/* Eliminar el borde predeterminado */
+    margin-left: 20px;
+
+}
+
+.section-nosotros .btn-primary:hover {
+    background-color: #E0DED6 !important; /* Color del fondo al pasar el mouse */
+    color: #2c2c2c !important; /* Color del texto al pasar el mouse */
+    border-color: #F6F4ED !important; /* Mantener el color del borde */
+  }
+
+.section-nosotros .cta_nosotros p{
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-nosotros .cta_nosotros{
+    text-align: center;
+}
+
+
+.section-nosotros ul{
+    list-style: none;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;  /* Alinea el icono y el texto verticalmente */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.custom-list .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;  /* Espacio reservado para el icono */
+    height: 24px;
+    margin-right: 10px;
+}
+
+.custom-list svg {
+    width: 20px;
+    height: 20px;
+    fill: #F6F4ED;
+}
+
+.custom-list .text {
+    flex: 1;  /* Permite que el texto use el espacio restante */
+}
+
+
+
+
+
+
+.section-servicios{
+    margin: 20px;
+}
+.section-servicios h2{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #F6F4ED;
+}
+
+.section-servicios p{
+    color: #F6F4ED;
+    text-align: center;
+}
+
+.texto-servicios p{
+    font-size: 3vh;
+}
+
+.card .card-body p{
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.card-title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.card .btn-primary{
+    align-items: center;
+    background-color: #2c2c2c;
+    border: none;
+}
+
+.card-body {
+    text-align: center;
+    max-height: 270px; /* Ajusta según lo necesites */
+    overflow: hidden;
+}
+
+.card-link {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del texto original */
+    display: block; /* Asegura que toda la tarjeta sea clickeable */
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin distorsión */
+}
+
+
+.card-body .btn {
+    margin-top: 15px; /* Ajusta la distancia entre el texto y el botón */
+}
+
+
+.container-cards{
+
+    margin-top: 50px;
+
+}
+
+/* Personalizar el estado normal del botón */
+.section-servicios .btn-primary {
+    background-color: #2c2c2c !important;  /* Color de fondo */
+    border-color: #2c2c2c !important;      /* Color del borde */
+    color: #F6F4ED !important;               /* Color del texto */
+}
+
+/* Eliminar borde y sombra cuando el botón está presionado o enfocado */
+.section-servicios .btn-primary:active,
+.btn-primary:focus {
+     /* Mismo color de fondo */
+    border-color: #2c2c2c !important;      /* Mismo color del borde */
+    color: #F6F4ED !important;               /* Mantener el color blanco del texto */
+    box-shadow: none !important;           /* Elimina la sombra del botón */
+    outline: none !important;              /* Elimina el contorno de enfoque */
+}
+
+.card{
+    margin: 20px;
+}
+
+
+/* Asegura que todas las cards tengan la misma altura */
+.card {
+    display: flex;
+    flex-direction: column; /* Permite que el contenido dentro de la card se distribuya verticalmente */
+    height: 100%; /* Hace que todas las cards tengan la misma altura */
+}
+
+/* Asegura que el contenido del cuerpo de la card se expanda para llenar el espacio disponible */
+.card-body {
+    flex-grow: 1; /* Hace que el contenido de la card se expanda para ocupar todo el espacio disponible */
+}
+
+/* Ajusta la imagen para que no se distorsione */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Efecto bounce en hover */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.card {
+    animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.section-faq h1{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #F6F4ED;
+}
+
+.section-faq p{
+    text-align: justify;
+    margin: 20px;
+    color: #F6F4ED;
+    font-size: 3vh;
+}
+
+.accordion-flush{
+    margin: 20px;
+}
+
+
+/* Cambia el color de fondo de las tarjetas */
+.accordion-item {
+    background-color: #F6F4ED; /* Color de fondo para las tarjetas */
+}
+
+.accordion-button {
+    background-color: #F6F4ED; /* Color de fondo por defecto */
+    color: #2c2c2c; /* Color del texto */
+    font-weight: bold;
+}
+
+/* Cambia el color de fondo cuando el item está expandido */
+.accordion-button:not(.collapsed) {
+    background-color: #F6F4ED; /* Color al expandir */
+    color: #2c2c2c; /* Color del texto al expandir */
+}
+
+
+.accordion-button:focus {
+    box-shadow: none; /* Elimina el efecto de sombra que se muestra al hacer foco */
+    border: none; /* Elimina el borde que aparece cuando se hace clic */
+}
+
+.accordion {
+    border-radius: 10px; /* Cambia este valor según el radio del borde */
+    overflow: hidden; /* Asegura que el contenido dentro de los elementos se ajuste bien */
+}
+
+
+.section-contacto{
+    margin: 20px;
+    color: #F6F4ED;
+    text-align: justify;
+}
+
+.section-contacto h1{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    color: #F6F4ED;
+
+}
+
+.section-contacto p{
+    font-size: 3vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-form h2{
+    margin-bottom: 25px;
+}
+
+/* Asegura un margen inferior consistente entre todos los campos */
+.mb-3 {
+    margin-bottom: 20px; /* Ajusta el valor según necesites */
+}
+
+/* Si deseas más espacio específicamente en el select, puedes personalizarlo también */
+.mb-3 select {
+    margin-top: 5px; /* Si es necesario, ajusta el margen superior del select */
+}
+
+
+/* Eliminar borde azul y enfoque del campo en todos los navegadores */
+input:focus, select:focus, textarea:focus {
+    outline: none !important; /* Elimina el contorno */
+    box-shadow: none !important; /* Elimina la sombra */
+    border-color: #ccc !important; /* Establece un borde más neutro */
+}
+
+
+.section-contacto .btn-primary {
+    background-color: #F6F4ED;
+    color: #2c2c2c;
+
+}
+
+.section-contacto .btn-primary:active {
+    background-color: #F6F4ED ;
+}
+
+
+/* Eliminar el borde y sombra al hacer clic */
+.btn-primary:focus, .btn-primary:active {
+    outline: none !important; /* Elimina el borde azul cuando el botón está en foco */
+    box-shadow: none !important; /* Elimina la sombra */
+    border: none !important; /* Elimina el borde */
+}
+
+/* Eliminar el borde del botón cuando no está en foco */
+.btn-primary {
+    border: none !important;
+}
+
+.section-contacto .btn-primary:hover {
+    background-color: #E0DED6 !important; /* Color del fondo al pasar el mouse */
+    color: #2c2c2c !important; /* Color del texto al pasar el mouse */
+    border-color: #F6F4ED !important; /* Mantener el color del borde */
+  }
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    /* Para el rango de iPad Pro: */
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important; /* Ocultamos el menú por defecto con !important */
+    }
+
+    .navbar-toggler {
+        display: block !important; /* Aseguramos que el botón hamburguesa se muestre */
+    }
+
+    .navbar-toggler.collapsed + .navbar-collapse {
+        display: block !important; /* Aseguramos que el menú se muestre cuando el botón se active */
+    }
+}
+
+
+body {
+    min-height: 100vh; /* Hace que el body tenga siempre al menos el 100% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* El main ocupa el espacio restante disponible */
+}
+
+
+
+
+/* Personalización del checkbox */
+.form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    border: 2px solid #ccc;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Cambiar color del checkbox cuando está seleccionado */
+.form-check-input:checked {
+    background-color: rgb(73, 76, 76);   /* Color verde para el fondo cuando está seleccionado */
+    border-color: rgb(73, 76, 76);       /* El borde también será verde */
+}
+
+.politica-privacidad{
+    color: #F6F4ED;
+    margin: 20px;
+    text-align: justify;
+}
+
+.btn-outline-primary{
+    background-color: #F6F4ED; /* Color al expandir */
+    color: #2c2c2c; /* Color del texto al expandir */
+    outline: none !important; /* Elimina el borde azul cuando el botón está en foco */
+    box-shadow: none !important; /* Elimina la sombra */
+    border: none !important; /* Elimina el borde */
+    margin: 20px;
+
+}
+
+.btn-outline-primary:hover{
+    background-color: #E0DED6; /* Color al expandir */
+    color: #2c2c2c; /* Color del texto al expandir */
+    outline: none !important; /* Elimina el borde azul cuando el botón está en foco */
+    box-shadow: none !important; /* Elimina la sombra */
+    border: none !important; /* Elimina el borde */
+}
+
+.actas{
+    font-size:2.4vh;
+}
+
+.contenedor-acta{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+ 
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #F6F4ED; /* Color de fondo según la imagen */
+    color: #2c2c2c; /* Texto en negro */
+    padding: 25px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .contactenos .Titulo-section{
+    font-size: 2.4vh;
+    
+}
+
+footer .legales .Titulo-section{
+    font-size: 2.4vh;
+    
+}
+
+footer .redes-sociales .Titulo-section{
+    font-size: 2.4vh;
+    
+}
+
+footer .redes-sociales{
+    padding-right: 25px;
+}
+
+footer .contactenos{
+    text-align: justify;
+}
+
+footer .redes-sociales{
+    text-align: justify;
+}
+
+footer .legales{
+    text-align: justify;
+}
+
+footer .legales a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .redes-sociales a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .redes-sociales .iconos a:hover{
+    text-decoration: none;
+    color: #5c5b5bf6;
+}
+
+footer .legales a:hover{
+    text-decoration: none;
+    color: #5c5b5bf6;
+}
+
+/* FOOTER RESPONSIVE */
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* TABLET (<= 768px) */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .contactenos,
+    footer .legales,
+    footer .redes-sociales {
+        text-align: center;
+    }
+
+    footer .redes-sociales {
+        width: 100%; /* Se asegura de que esté alineado */
+        padding-left: 25px;
+        margin-top: 10px;
+    }
+    footer .redes-sociales .iconos {
+        justify-content: center; /* Centra los iconos */
+        gap: 10px;
+    }
+    footer .redes-sociales .Titulo-section{
+        font-size: 2.4vh;
+    }
+    footer .legales .Titulo-section{
+        font-size: 2.4vh;
+    }
+    footer .contactenos .Titulo-section{
+        font-size: 2.4vh;
+    }
+}
+
+/* MOBILE (<= 480px) */
+@media (max-width: 480px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    footer .Titulo-section {
+        font-size: 2vh; /* Reduce tamaño en móviles */
+    }
+
+    footer .contactenos,
+    footer .legales,
+    footer .redes-sociales {
+        text-align: center;
+    }
+
+    footer .redes-sociales {
+        width: 100%; /* Se asegura de que esté alineado */
+        padding-left: 25px;
+        margin-top: 10px;
+    }
+
+    footer .redes-sociales .iconos {
+        justify-content: center; /* Centra los iconos */
+        gap: 10px;
+    }
+
+    footer .redes-sociales .iconos a {
+        font-size: 20px; /* Reduce tamaño de los iconos */
+    }
+    footer .redes-sociales .Titulo-section{
+        font-size: 2.4vh;
+    }
+    footer .legales .Titulo-section{
+        font-size: 2.4vh;
+    }
+    footer .contactenos .Titulo-section{
+        font-size: 2.4vh;
+    }
+}
